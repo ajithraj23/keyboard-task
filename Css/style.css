@@ -1,0 +1,166 @@
+* {
+  margin: auto 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 1rem 4rem;
+  padding: 20px 50px;
+}
+.logo img {
+  width: 75px;
+  height: 35px;
+}
+.logo-heading h2 {
+  position: relative;
+  color: #dcba1a;
+  left: -10px;
+  font-size: 32px;
+}
+.banner-box {
+  width: 1550px;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+.banner-box {
+  background-color: rgb(233, 233, 233);
+}
+.right-content {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.banner-data {
+  background-color: #ffffff;
+  padding: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+}
+.banner-data:not(:last-child)::after {
+  border-right: 3px solid lightgrey;
+  content: "";
+  display: block;
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.banner-data h3 {
+  font-size: 32px;
+}
+.banner-data p {
+  font-size: 12px;
+  color: black;
+  font-weight: 600;
+}
+.banner-data span {
+  font-size: 14px;
+  color: lightgray;
+}
+
+.banner-content {
+  padding: 50px 25px;
+}
+p::first-letter {
+  color: #dcba1a;
+  text-decoration: underline;
+}
+#typing-data {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  font-weight: 600;
+}
+/* ------SECOND --- BANNER--- */
+.second-banner {
+  width: 1300px;
+  background-color: #dfd9d9;
+  margin: auto;
+}
+.keyboard-layout button {
+  background-color: #f0efed;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  min-width: 70px;
+  margin: 3px;
+  height: 60px;
+  text-align: center;
+  transition-duration: 0.4s;
+  display: inline block;
+}
+.keyboard-layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.order {
+  margin-bottom: 5px;
+}
+.keyboard-layout span {
+  display: block;
+}
+.special {
+  width: 90px;
+}
+.caps {
+  width: 7rem;
+}
+.enter {
+  width: 8rem;
+}
+.shift {
+  width: 10rem;
+}
+.space {
+  width: 690px;
+}
+.backspace {
+  position: relative;
+  top: 11px;
+}
+.bracket {
+  position: relative;
+  bottom: 11px;
+}
+ button {
+  position: relative;
+}
+
+button::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  border: 5px solid #dcba1a;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+button.active::after {
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+} 
